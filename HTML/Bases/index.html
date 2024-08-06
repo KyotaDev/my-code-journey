@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- Indica que el documento es de tipo HTML5 -->
+<html>
+<!-- head contiene información sobre el documento -->
+<head>
+    <!-- title contiene el título que se muestra en la pestaña -->
+    <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 500px;">
+        <!-- thead agrupa el contenido de las cabeceras de una tabla -->
+        <thead>
+            <!-- tr es una fila de la tabla (table row)-->
+            <tr>
+                <!-- th es una celda de encabezado de la tabla (table header)-->
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <!-- tbody agrupa el contenido del cuerpo de la tabla -->
+        <tbody>
+            <tr>
+                <!-- td es una celda de la tabla (table data)-->
+                <td>Manzana</td>
+                <td>1.00</td>
+            </tr>
+            <tr>
+                <!-- td es una celda de la tabla (table data)-->
+                <td>Pera</td>
+                <td>1.50</td>
+            </tr>
+            <tr>
+                <!-- td es una celda de la tabla (table data)-->
+                <td>Uva</td>
+                <td>2.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: 4.50</td>
+        </tfoot>
+    </table>
+    <!-- ul es lista desordenada (unordered list)-->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!-- ol es lista ordenada (unordered list)-->
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">Elemento 1</li> <!-- list-style-type cambia el tipo de viñeta -->
+                <li style="list-style-type: lower-alpha;">Elemento 2</li>
+                <li style="list-style-type: lower-alpha;">Elemento 3</li>
+                <li style="list-style-type: lower-alpha;">Elemento 4</li>
+            </ol>
+        </li>
+    </ol>
+
+    <form action="/formulario" GET="">
+        <label for="nombre">Nombre</label>
+        <input value="pruebita" id = "nombre" name="nombre" placeholder="nombre"/>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" placeholder="apellido">
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea rows="10" cols="50" name="comentario" id="comentario" placeholder="Ingrese comentario">este es un valor por defecto</textarea>
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
